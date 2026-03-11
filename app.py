@@ -22,7 +22,7 @@ services = [
 def build_rows():
     rows = ""
     for service in services:
-        free_html= f"<span style='color: green; font-weight: bold;'>Free</span>" if service['name'] == "IBM Watson Assistant" else ""
+        free_html= f"<span style='color: green; font-weight: bold;'>Free</span>"  
         rows += f"<tr><td>{service['name']}</td><td>{service['description']}</td><td><a href='{service['endpoint']}'>Access</a> </td> <td>{free_html} </td> </tr>"
     return rows
 
